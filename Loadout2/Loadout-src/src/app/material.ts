@@ -1,13 +1,26 @@
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatButtonModule, MatCheckboxModule} from '@angular/material';
-import { MatToolbarModule} from "@angular/material/toolbar";
-import { MatMenuModule, MatMenu } from "@angular/material/menu";
+import {
+    MatButtonModule,
+    MatMenuModule,
+    MatToolbarModule,
+    MatIconModule,
+    MatCardModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatGridListModule,
+    MatRadioModule,
+    MatSelectModule,
+    MatDatepickerModule,
+    MatNativeDateModule
+  } from '@angular/material';
+  
+
 
 import { NgModule } from '@angular/core';
 
 
+
 @NgModule({
-    imports: [MatButtonModule, MatCheckboxModule, MatToolbarModule, MatMenuModule, BrowserAnimationsModule],
-    exports: [MatButtonModule, MatCheckboxModule, MatToolbarModule, MatMenuModule, BrowserAnimationsModule],
+    imports: [MatButtonModule, MatToolbarModule, MatMenuModule, MatIconModule, MatCardModule, MatFormFieldModule, MatInputModule, MatGridListModule, MatRadioModule, MatSelectModule, MatDatepickerModule, MatNativeDateModule],
+    exports: [MatButtonModule, MatToolbarModule, MatMenuModule, MatIconModule, MatCardModule, MatFormFieldModule, MatInputModule, MatGridListModule, MatRadioModule, MatSelectModule, MatDatepickerModule, MatNativeDateModule],
 })
 export class MaterialModule {}

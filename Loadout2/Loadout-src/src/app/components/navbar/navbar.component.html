@@ -1,12 +1,26 @@
+<mat-toolbar color="primary">
+  <span class="fill-remaining-space"></span>
+    <span>Loadout!</span>
+  <span class="fill-remaining-space"></span>
+  
+  
+    <span class="example-spacer"></span>
+    <div fxShow="true" fxHide.lt-md="true">
+  
+    <a mat-button [routerLink]="['/']">home</a>
+  
+    <a mat-button [routerLink]="['/post']">post</a>
+    <a mat-button [routerLink]="['/dashboard']">dashboard</a>
+  
+    <a mat-button [routerLink]="['/register']">profile</a>
+    <a mat-button [routerLink]="['/login']">login</a>
+  
+    <a mat-button [routerLink]="['/register']">register</a>
+  
+  </div>
+ 
 
+  
+  </mat-toolbar>
 
-<mat-toolbar>
-  <button mat-button [matMenuTriggerFor]="menu">Menu</button>
-    <mat-menu #menu="matMenu">
-      <button mat-menu-item><a [routerLink]="['/profile']">Profile</a></button>
-      <button mat-menu-item><a [routerLink]="['/dashboard']">Feed</a></button>
-      <button mat-menu-item><a [routerLink]="['/']">Home</a></button>
-      <button mat-menu-item><a [routerLink]="['/login']">Login</a></button>
-      <button mat-menu-item><a [routerLink]="['/register']"> Register</a></button>
-    </mat-menu>
-</mat-toolbar>
+ 
